@@ -2,6 +2,7 @@ package com.example.calculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText et_number_1, et_number_2;
     RadioButton rb_addition, rb_substraction, rb_multiplication, rb_division;
-    Button btn_calculate;
+    Button btn_calculate, btn_about;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         rb_multiplication = findViewById(R.id.rb_multiplication);
         rb_division = findViewById(R.id.rb_division);
         btn_calculate = findViewById(R.id.btn_calculate);
+        btn_about = findViewById(R.id.btn_about);
 
         rb_addition.setChecked(true);
 
@@ -49,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 Toast.makeText(MainActivity.this, String.valueOf(result), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btn_about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+
+                startActivity(intent);
             }
         });
     }
