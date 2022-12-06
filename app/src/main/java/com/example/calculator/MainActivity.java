@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         rb_division = findViewById(R.id.rb_division);
         btn_calculate = findViewById(R.id.btn_calculate);
 
+        rb_addition.setChecked(true);
+
         btn_calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,8 +42,11 @@ public class MainActivity extends AppCompatActivity {
                     result = number1 - number2;
                 if (rb_multiplication.isChecked())
                     result = number1 * number2;
-                if (rb_division.isChecked())
+                if (rb_division.isChecked()) {
+                    if (number2 == 0) return;
+
                     result = number1 / number2;
+                }
 
                 Toast.makeText(MainActivity.this, String.valueOf(result), Toast.LENGTH_SHORT).show();
             }
