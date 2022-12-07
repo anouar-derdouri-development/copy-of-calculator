@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 if (rb_multiplication.isChecked())
                     result = number1 * number2;
                 if (rb_division.isChecked()) {
+                    // ToDo: Show Toast when number2 = 0
                     if (number2 == 0) return;
 
                     result = number1 / number2;
