@@ -49,7 +49,10 @@ public class MainActivity extends AppCompatActivity {
                      ToDo:
                       - Show Toast when number2 iq equal to 0
                     */
-                    if (number2 == 0) return;
+                    if (number2 == 0) {
+                        Toast.makeText(MainActivity.this, "Division by 0 !!!", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
 
                     result = number1 / number2;
                 }
