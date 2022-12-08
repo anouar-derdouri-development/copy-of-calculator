@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     result = number1 * number2;
                 if (rb_division.isChecked()) {
                     if (number2 == 0) {
-                        Toast.makeText(MainActivity.this, "Attention: Division by 0 !!!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "You can't divide by 0 !!!", Toast.LENGTH_SHORT).show();
                         return;
                     }
 
