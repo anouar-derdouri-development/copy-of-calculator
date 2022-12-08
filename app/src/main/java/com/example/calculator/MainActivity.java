@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                       - Show Toast when number2 iq equal to 0
                     */
                     if (number2 == 0) {
-                        Toast.makeText(MainActivity.this, "Division by 0 !!!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Attention: Division by 0 !!!", Toast.LENGTH_SHORT).show();
                         return;
                     }
 
