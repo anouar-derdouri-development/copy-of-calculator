@@ -45,10 +45,6 @@ public class MainActivity extends AppCompatActivity {
                 if (rb_multiplication.isChecked())
                     result = number1 * number2;
                 if (rb_division.isChecked()) {
-                    /*
-                     ToDo:
-                      - Show Toast when number2 iq equal to 0
-                    */
                     if (number2 == 0) {
                         Toast.makeText(MainActivity.this, "Attention: Division by 0 !!!", Toast.LENGTH_SHORT).show();
                         return;
