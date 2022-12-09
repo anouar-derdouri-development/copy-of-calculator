@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="This application is created by M. Anouar DERDOURI\nIt provides simple arithmitic functions (Addition | Substraction | Multiplication | Division)"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_return"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
