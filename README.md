@@ -2,7 +2,7 @@
 
 ## About
 
-**Calculator** is an application that provides simple arithmetic functions:
+**Calculator** is an app. that provides simple arithmetic functions:
 
 * Addition
 * Substraction
